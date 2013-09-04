@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var inherits = require('util').inherits;
+var Transform = require('stream').Transform;
+  
+function ${1:streamName}(${2:arguments ,}options) {
+  if (!(this instanceof ${1:streamName})) {
+    return new ${1:streamName}(${2:arguments ,}options);
+  }
+  
+  if (!options) { options = {}; }
+  options.objectMode = true;
+ 
+  Transform.call(this, options);
+}
+
+inherits(${1:streamName}, Transform);
+
+${1:streamName}.prototype._transform = function (${3:chunk}, encoding, callback) {
+  this.push(${3:chunk});
+  callback();
+};
+ 
+module.exports = ${1:streamName};
+</string>
+	<key>name</key>
+	<string>stream.Transform</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>stream</string>
+	<key>uuid</key>
+	<string>CAB26EEA-BBE5-49E7-8715-960A5A233A68</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if (!(this instanceof ${1:class_name})) {
+  return new ${1:class_name}(${2:options});
+}</string>
+	<key>name</key>
+	<string>!instance</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>ni</string>
+	<key>uuid</key>
+	<string>C0D70288-08CA-4E3B-9404-60A2E18A6AD1</string>
+</dict>
+</plist>

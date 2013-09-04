@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var inherits = require('util').inherits;
+var Writable = require('stream').Writable;
+  
+function ${1:streamName}(${2:arguments ,}options) {
+  if (!(this instanceof ${1:streamName})) {
+    return new ${1:streamName}(${2:arguments ,}options);
+  }
+  
+  if (!options) { options = {}; }
+  options.objectMode = true;
+ 
+  Writable.call(this, options);
+}
+
+inherits(${1:streamName}, Writable);
+
+${1:streamName}.prototype._write = function (${3:chunk}, encoding, callback) {
+  console.log(${3:chunk});
+  callback();
+};
+ 
+module.exports = ${1:streamName};</string>
+	<key>name</key>
+	<string>stream.Writable</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>stream</string>
+	<key>uuid</key>
+	<string>D08998CD-9768-4E57-A0F4-EE3ADDB6E714</string>
+</dict>
+</plist>
