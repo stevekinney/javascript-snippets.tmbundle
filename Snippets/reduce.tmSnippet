@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>reduce(function(previousValue, currentValue, index, array){
+  ${0}
+});</string>
+	<key>name</key>
+	<string>reduce</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>reduce</string>
+	<key>uuid</key>
+	<string>1F0F5119-1CF5-4262-9DD2-E03F99498760</string>
+</dict>
+</plist>

@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:property}: doc.${1}</string>
+	<string>every(function (${1:element}) {
+  $0
+});</string>
 	<key>name</key>
-	<string>Couch Property</string>
+	<string>every</string>
 	<key>scope</key>
 	<string>source.js</string>
 	<key>tabTrigger</key>
-	<string>cp</string>
+	<string>every</string>
 	<key>uuid</key>
-	<string>ED152FE8-7350-41C1-911E-0BCA5602F66D</string>
+	<string>307CCBD9-6306-44CC-A2FB-54FD47E97672</string>
 </dict>
 </plist>
