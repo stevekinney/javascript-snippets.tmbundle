@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>app.${1:get}('${2:route}', function (req, res) {
+  $0
+});</string>
+	<key>name</key>
+	<string>Express Route</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>xr</string>
+	<key>uuid</key>
+	<string>DC3E88E2-FEDE-4E1C-81BB-5109E998326C</string>
+</dict>
+</plist>
